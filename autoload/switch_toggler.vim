@@ -38,5 +38,16 @@ function! switch_toggler#expandtab()
     endif
 endfunction
 
+"
+" シンタックスハイライトを切り替える。(enable/off)
+"
+function! switch_toggler#syntax()
+    if exists("g:syntax_on")
+        syntax off
+    else
+        syntax enable
+    endif
+endfunction
+
 
 
